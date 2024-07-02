@@ -11,12 +11,9 @@ services:
       POSTGRES_PASSWORD: "123456"
       POSTGRES_USER: "postgres"
       POSTGRES_DB: "em_learning_db"      
-#    networks:
-#      present_network:
-#        aliases:
-#          - "dbpostgresql"  
-#networks:
-#  english_network:
-#    driver: bridge
-#  present_network:
-#    driver: bridge
+    networks:
+      - dbpostgresql-network
+
+networks:
+  dbpostgresql-network:
+    external: true
