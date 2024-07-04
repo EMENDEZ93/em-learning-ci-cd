@@ -12,4 +12,4 @@ services:
 networks:
   dbpostgresql-network:
     name: dbpostgresql-network-v1
-    driver: bridge
+    external: true
