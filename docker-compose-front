@@ -1,0 +1,12 @@
+version: '3.6'
+
+services:
+  frontend-compose:
+    build:
+      context: ./ 
+      dockerfile: DockerfileFrontend
+    image: frontend_testing
+    ports:
+      - 8001:80
+    environment:
+      - EXAMPLE=${HOST_IP}
