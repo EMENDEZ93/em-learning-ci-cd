@@ -13,9 +13,6 @@ services:
       POSTGRES_DB: "em_learning_db"      
     networks:
       dbpostgresql-network
-        aliases:
-         - "dbpostgresql"
-
 networks:
   dbpostgresql-network:
     driver: bridge
