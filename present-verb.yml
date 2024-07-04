@@ -10,6 +10,5 @@ services:
       - dbpostgresql-network-v1
 
 networks:
-  dbpostgresql-network:
-    name: dbpostgresql-network-v1
+  dbpostgresql-network-v1:
     external: true
