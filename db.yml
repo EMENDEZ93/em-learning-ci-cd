@@ -12,7 +12,7 @@ services:
       POSTGRES_USER: "postgres"
       POSTGRES_DB: "em_learning_db"      
     networks:
-      dbpostgresql-network
+      - dbpostgresql-network
 networks:
   dbpostgresql-network:
     driver: bridge
