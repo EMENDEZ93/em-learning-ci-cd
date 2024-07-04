@@ -7,7 +7,7 @@ services:
     ports:
       - '8091:8091'
     networks:
-      - dbpostgresql-network
+      - dbpostgresql-network-v1
 
 networks:
   dbpostgresql-network:
