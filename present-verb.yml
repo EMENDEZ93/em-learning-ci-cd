@@ -8,6 +8,8 @@ services:
       - '8091:8091'
     networks:
       - dbpostgresql-network
+
 networks:
   dbpostgresql-network:
+    name: dbpostgresql-network-v1
     driver: bridge
