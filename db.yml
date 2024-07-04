@@ -12,9 +12,9 @@ services:
       POSTGRES_USER: "postgres"
       POSTGRES_DB: "em_learning_db"      
     networks:
-      - dbpostgresql-network
-      aliases:
-       - "dbpostgresql"
+      dbpostgresql-network
+        aliases:
+         - "dbpostgresql"
 
 networks:
   dbpostgresql-network:
