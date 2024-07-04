@@ -1,0 +1,16 @@
+version: '3.7'      
+services:
+  emlearningbackend:
+    build:
+      context: ./
+      dockerfile: dockerfile
+    ports:
+      - '8091:8091'
+    networks:
+      dbpostgresql-network:
+        aliases:
+          - "backend-alias"   
+
+networks:
+  dbpostgresql-network:
+    driver: bridge
