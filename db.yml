@@ -15,5 +15,5 @@ services:
       - dbpostgresql-network
 
 networks:
-  dbpostgresql-network:
-    driver: bridge
+  dbpostgresql-network-v1:
+    external: true
