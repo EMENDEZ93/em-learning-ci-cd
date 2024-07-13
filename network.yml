@@ -1,0 +1,6 @@
+version: '3.7'      
+
+networks:
+  dbpostgresql-network:
+    name: dbpostgresql-network-v1
+    driver: bridge
