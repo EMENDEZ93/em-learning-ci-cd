@@ -1,7 +1,7 @@
 version: '3.7'      
 services:
   dbpostgresql:
-    #container_name: dbpostgresql    
+    container_name: dbpostgresql_v1    
     image: "postgres:9.6"
     ports:
       - "5433:5432"
@@ -15,5 +15,6 @@ services:
       - dbpostgresql-network
 
 networks:
-  dbpostgresql-network-v1:
-    external: true
+  dbpostgresql-network:
+    name: dbpostgresql-network-v1  # Nombre personalizado para la red
+    driver: bridge
